@@ -9,10 +9,13 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 		 
 		 int customers = scan.nextInt();
-		 int items = scan.nextInt();
 		 //System.out.println(customers);
 		 for (int i = 0; i < customers; i++) {
+			 String first = scan.next();
+			 char firstInt = first.charAt (0);
+			 String last = scan.next();
 			 double total = 0.0;
+			 int items = scan.nextInt();
 			 //System.out.println(items);
 			 for (int x = 0; x < items; x++) {
 				int quantity;
@@ -26,11 +29,7 @@ public class A1Novice {
 			    total = total + cost;
 			 }
 			 
-			String first = scan.next();
-			char firstInt = first.charAt (0);
-			String last = scan.next();
-			String totalString = Double.toString(total);
-			System.out.println(firstInt + ". " + last + ": " + totalString);
+			System.out.println(firstInt + ". " + last + ": " + String.format("%.2f", total));
 		}
 	
 	}

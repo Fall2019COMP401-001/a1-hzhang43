@@ -23,10 +23,10 @@ public class A1Jedi {
 			String first = scan.next();
 			String last = scan.next();
 			int items = scan.nextInt();
-			boolean alreadyBought = false;
 			for (int y = 0; y < items; y++) {
 				int num = scan.nextInt();
 				String itemName = scan.next();
+				boolean alreadyBought = false;
 				for (int z = 0; z < count; z++) {
 					if (food[z].equals(itemName)) {
 						foodCount[z] += num;

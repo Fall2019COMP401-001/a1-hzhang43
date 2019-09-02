@@ -11,8 +11,14 @@ public class A1Novice {
 		for (int i = 0; i < scan.nextInt(); i++) {
 			int total = 0;
 			for (int x = 0; x < scan.nextInt(); x++) {
-				
+				int quantity = scan.nextInt();
+				double price = scan.nextDouble();
+				total += quantity * price;
 			}
+			String first = scan.next();
+			char firstInt = first.charAt (0);
+			String last = scan.next();
+			System.out.println(firstInt + ". " + last + ": " + total);
 		}
 			
 	}

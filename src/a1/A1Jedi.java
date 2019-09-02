@@ -34,7 +34,11 @@ public class A1Jedi {
 			}
 		}
 		for (int index = 0; index < count; index++) {
-			System.out.println(customerCount[index] + " customers bought " + foodCount[index] + " " + food[index]);
+			if (customerCount[index] == 0) {
+				System.out.println("No customers bought " + food[index]);
+			} else {
+				System.out.println(customerCount[index] + " customers bought " + foodCount[index] + " " + food[index]);
+			}
 		}
 	}
 }

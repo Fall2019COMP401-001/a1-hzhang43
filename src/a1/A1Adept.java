@@ -33,7 +33,7 @@ public class A1Adept {
 				String itemName = scan.next();
 				double itemPrice = 0;
 				for (int z = 0; z < count; z++) {
-					if (food[z] == itemName) {
+					if (food[z].equals(itemName)) {
 						itemPrice = price[z];
 					}
 				}

@@ -15,6 +15,7 @@ public class A1Jedi {
 		int[] foodCount = new int[count];
 		int[] customerCount = new int[count];
 		boolean[] bought = new boolean[count];
+		System.out.println(Arrays.toString(bought));
 		for (int i = 0; i < count; i++) {
 			food[i] = scan.next();
 			price[i] = scan.nextDouble();

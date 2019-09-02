@@ -12,6 +12,7 @@ public class A1Novice {
 		 System.out.println(customers);
 		 for (int i = 0; i < customers; i++) {
 			 double total = 0.0;
+			 System.out.println(scan.nextLine());
 			 int items = scan.nextInt();
 			 System.out.println(items);
 			 for (int x = 0; x < items; x++) {

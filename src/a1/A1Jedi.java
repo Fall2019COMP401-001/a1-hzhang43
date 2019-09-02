@@ -30,7 +30,7 @@ public class A1Jedi {
 				for (int z = 0; z < count; z++) {
 					if (food[z].equals(itemName)) {
 						foodCount[z] += num;
-						if (!alreadyBought) {
+						if (alreadyBought) {
 							customerCount[z] += 1;
 							alreadyBought = true;
 						}

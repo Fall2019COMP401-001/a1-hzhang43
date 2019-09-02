@@ -1,5 +1,6 @@
 package a1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class A1Adept {
@@ -14,8 +15,8 @@ public class A1Adept {
 			food[i] = scan.next();
 			price[i] = scan.nextDouble();
 		}
-		System.out.println(food);
-		System.out.println(price);
+		System.out.println(Arrays.toString(food));
+		System.out.println(Arrays.toString(price));
 		
 	}
 }

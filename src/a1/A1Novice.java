@@ -8,9 +8,9 @@ public class A1Novice {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		  for (int i = 0; i < scan.nextInt(); i++) {
+		  for (int i = 0; i < 1; i++) {
 			 double total = 0.0;
-			 for (int x = 0; x < scan.nextInt(); x++) {
+			 for (int x = 0; x < 1; x++) {
 				 int quantity = scan.nextInt();
 				 double price = scan.nextDouble();
 				 total += quantity * price;

@@ -44,6 +44,6 @@ public class A1Jedi {
 			} else {
 				System.out.println(customerCount[index] + " customers bought " + foodCount[index] + " " + food[index]);
 			}
+		}
 	}
-}
 }

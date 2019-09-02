@@ -18,10 +18,9 @@ public class A1Novice {
 			 int items = scan.nextInt();
 			 System.out.println(items);
 			 for (int x = 0; x < items; x++) {
-				int quantity;
-				quantity = scan.nextInt();
-				double price;
-				price = scan.nextDouble();
+				int	quantity = scan.nextInt();
+				String food = scan.next();
+				double price = scan.nextDouble();
 			    total += quantity * price;
 			 }
 			 

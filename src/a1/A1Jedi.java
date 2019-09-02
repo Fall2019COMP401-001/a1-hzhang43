@@ -14,6 +14,7 @@ public class A1Jedi {
 		double[] price = new double[count];
 		int[] foodCount = new int[count];
 		int[] customerCount = new int[count];
+		boolean[] bought = new boolean[count];
 		for (int i = 0; i < count; i++) {
 			food[i] = scan.next();
 			price[i] = scan.nextDouble();
@@ -26,15 +27,14 @@ public class A1Jedi {
 			for (int y = 0; y < items; y++) {
 				int num = scan.nextInt();
 				String itemName = scan.next();
-				boolean alreadyBought = false;
 				for (int z = 0; z < count; z++) {
 					if (food[z].equals(itemName)) {
 						foodCount[z] += num;
-						if (alreadyBought) {
-							alreadyBought = true;
+						if (bought[z]) {
+							bought[z] = true;
 						} else {
 							customerCount[z] += 1;
-							alreadyBought = true;
+							bought[z] = true;
 						}
 					
 					}

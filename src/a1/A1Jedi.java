@@ -27,7 +27,7 @@ public class A1Jedi {
 				String itemName = scan.next();
 				for (int z = 0; z < count; z++) {
 					if (food[z].equals(itemName)) {
-						foodCount[z] = num;
+						foodCount[z] += num;
 						customerCount[z] += 1;
 					}
 				}

@@ -9,21 +9,20 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 		 
 		 int customers = scan.nextInt();
-		 System.out.println(customers);
+		 int items = scan.nextInt();
+		 //System.out.println(customers);
 		 for (int i = 0; i < customers; i++) {
 			 double total = 0.0;
-			 System.out.println(scan.nextLine());
-			 int items = scan.nextInt();
-			 System.out.println(items);
+			 //System.out.println(items);
 			 for (int x = 0; x < items; x++) {
 				int quantity;
 				quantity = scan.nextInt();
 				double price;
 				price=scan.nextDouble();
-				System.out.println(quantity);
+				//System.out.println(quantity);
 				double cost;
 				cost=quantity*price;
-				System.out.println(total);
+				//System.out.println(total);
 			    total = total + cost;
 			 }
 			 

@@ -34,9 +34,11 @@ public class A1Jedi {
 							alreadyBought = true;
 						}
 					
+					}
 				}
-			}
 			
+			}
+		
 		}
 		for (int index = 0; index < count; index++) {
 			if (customerCount[index] == 0) {
@@ -46,5 +48,4 @@ public class A1Jedi {
 			}
 		}
 	}
-}
 }

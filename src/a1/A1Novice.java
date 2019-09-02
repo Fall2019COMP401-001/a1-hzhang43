@@ -20,9 +20,7 @@ public class A1Novice {
 			char firstInt = first.charAt (0);
 			String last = scan.next();
 			System.out.println(firstInt + ". " + last + ": " + total);
-		}
-			
 	}
-		
+	
 }
 

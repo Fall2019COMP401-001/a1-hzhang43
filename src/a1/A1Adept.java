@@ -43,7 +43,8 @@ public class A1Adept {
 			if (total > max) {
 				max = total;
 				maxName = first + " " + last;
-			} else if (total < min) {
+			}
+			if (total < min) {
 				min = total;
 				minName = first + " " + last;
 			}

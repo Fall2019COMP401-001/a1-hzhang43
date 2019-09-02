@@ -22,7 +22,7 @@ public class A1Adept {
 		double min = 99999.99;
 		String maxName = "";
 		String minName = "";
-		double sum = 0;
+		double sum = 0.0;
 		for (int x = 0; x < customers; x++) {
 			String first = scan.next();
 			String last = scan.next();
@@ -31,15 +31,15 @@ public class A1Adept {
 			for (int y = 0; y < items; y++) {
 				int quantity = scan.nextInt();
 				String itemName = scan.next();
-				double itemPrice = 0;
+				double itemPrice;
 				for (int z = 0; z < count; z++) {
 					if (food[z] == itemName) {
 						itemPrice = price[z];
 					}
 				}
 				total += quantity * itemPrice;
-				sum += total;
 			}
+			sum += total;
 			if (total > max) {
 				max = total;
 				maxName = first + " " + last;

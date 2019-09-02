@@ -13,7 +13,7 @@ public class A1Novice {
 			 // for (int x = 0; x < scan.nextInt(); x++) {
 				 int quantity = scan.nextInt();
 				 double price = scan.nextDouble();
-				 total += quantity * price;
+				 // total += quantity * price;
 			// }
 			String first = scan.next();
 			char firstInt = first.charAt (0);

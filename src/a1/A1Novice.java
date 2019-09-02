@@ -15,13 +15,17 @@ public class A1Novice {
 			 int items = scan.nextInt();
 			 System.out.println(items);
 			 for (int x = 0; x < items; x++) {
-				int quantity = scan.nextInt();
+				int quantity;
+				quantity = scan.nextInt();
+				double price;
+				price=scan.nextDouble();
 				System.out.println(quantity);
-				double price = scan.nextDouble();
-				System.out.println(price);
-				total += quantity * price;
+				double cost;
+				cost=quantity*price;
 				System.out.println(total);
-			}
+			    total = total + cost;
+			 }
+			 
 			String first = scan.next();
 			char firstInt = first.charAt (0);
 			String last = scan.next();

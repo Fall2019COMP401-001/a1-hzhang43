@@ -29,11 +29,11 @@ public class A1Jedi {
 				for (int z = 0; z < count; z++) {
 					if (food[z].equals(itemName)) {
 						foodCount[z] += num;
-					}
-					if (alreadyBought == false) {
-						customerCount[z] += 1;
-						alreadyBought = true;
-					}
+						if (alreadyBought == false) {
+							customerCount[z] += 1;
+							alreadyBought = true;
+						}
+					
 				}
 			}
 			
@@ -46,4 +46,5 @@ public class A1Jedi {
 			}
 		}
 	}
+}
 }

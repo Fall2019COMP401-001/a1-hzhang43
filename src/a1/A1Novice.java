@@ -7,8 +7,15 @@ public class A1Novice {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-
-		// Your code follows here.
 		
+		for (int i = 0; i < scan.nextInt(); i++) {
+			int total = 0;
+			for (int x = 0; x < scan.nextInt(); x++) {
+				
+			}
+		}
+			
 	}
+		
 }
+

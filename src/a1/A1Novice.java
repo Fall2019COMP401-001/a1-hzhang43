@@ -8,8 +8,8 @@ public class A1Novice {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		  //for (int i = 0; i < scan.nextInt(); i++) {
-			 int total = 0;
+		  for (int i = 0; i < scan.nextInt(); i++) {
+			 double total = 0.0;
 			 for (int x = 0; x < scan.nextInt(); x++) {
 				 int quantity = scan.nextInt();
 				 double price = scan.nextDouble();
@@ -19,7 +19,7 @@ public class A1Novice {
 			char firstInt = first.charAt (0);
 			String last = scan.next();
 			System.out.println(firstInt + ". " + last + ": " + total);
-		  //}
+		  }
 	
 	}
 	

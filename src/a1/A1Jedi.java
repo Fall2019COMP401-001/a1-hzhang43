@@ -30,10 +30,9 @@ public class A1Jedi {
 					if (food[z].equals(itemName)) {
 						foodCount[z] += num;
 						alreadyBought = true;
-					}
-					if (alreadyBought == false) {
-						customerCount[z] += 1;
-					}
+						if (alreadyBought == false) {
+							customerCount[z] += 1;
+						}
 				}
 			}
 		}
@@ -45,4 +44,5 @@ public class A1Jedi {
 			}
 		}
 	}
+}
 }

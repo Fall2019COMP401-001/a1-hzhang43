@@ -31,6 +31,8 @@ public class A1Jedi {
 					if (food[z].equals(itemName)) {
 						foodCount[z] += num;
 						if (alreadyBought) {
+							alreadyBought = true;
+						} else {
 							customerCount[z] += 1;
 							alreadyBought = true;
 						}

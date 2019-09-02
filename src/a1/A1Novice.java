@@ -15,6 +15,7 @@ public class A1Novice {
 				// double price = scan.nextDouble();
 				// total += quantity * price;
 			// }
+			int total = 0;
 			String first = scan.next();
 			char firstInt = first.charAt (0);
 			String last = scan.next();

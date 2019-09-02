@@ -6,6 +6,7 @@ public class A1Novice {
 
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		for (int i = 0; i < scan.nextInt(); i++) {

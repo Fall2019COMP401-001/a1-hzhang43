@@ -14,7 +14,6 @@ public class A1Jedi {
 		double[] price = new double[count];
 		int[] foodCount = new int[count];
 		int[] customerCount = new int[count];
-		System.out.println(Arrays.toString(foodCount));
 		for (int i = 0; i < count; i++) {
 			food[i] = scan.next();
 			price[i] = scan.nextDouble();
@@ -42,12 +41,12 @@ public class A1Jedi {
 			}
 		
 		}
-		//for (int index = 0; index < count; index++) {
-			//if (customerCount[index] == 0) {
-				//System.out.println("No customers bought " + food[index]);
-			//} else {
-				//System.out.println(customerCount[index] + " customers bought " + foodCount[index] + " " + food[index]);
-			//}
-		//}
+		for (int index = 0; index < count; index++) {
+			if (customerCount[index] == 0) {
+				System.out.println("No customers bought " + food[index]);
+			} else {
+				System.out.println(customerCount[index] + " customers bought " + foodCount[index] + " " + food[index]);
+			}
+		}
 	}
 }

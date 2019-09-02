@@ -22,27 +22,27 @@ public class A1Jedi {
 			String first = scan.next();
 			String last = scan.next();
 			int items = scan.nextInt();
+			boolean alreadyBought = false;
 			for (int y = 0; y < items; y++) {
 				int num = scan.nextInt();
 				String itemName = scan.next();
-				boolean alreadyBought = false;
 				for (int z = 0; z < count; z++) {
 					if (food[z].equals(itemName)) {
 						foodCount[z] += num;
+					}
+					if (alreadyBought == false) {
+						customerCount[z] += 1;
 						alreadyBought = true;
-						if (alreadyBought == false) {
-							customerCount[z] += 1;
-						}
+					}
+				}
+			}
+			for (int index = 0; index < count; index++) {
+				if (customerCount[index] == 0) {
+					System.out.println("No customers bought " + food[index]);
+				} else {
+					System.out.println(customerCount[index] + " customers bought " + foodCount[index] + " " + food[index]);
 				}
 			}
 		}
-		for (int index = 0; index < count; index++) {
-			if (customerCount[index] == 0) {
-				System.out.println("No customers bought " + food[index]);
-			} else {
-				System.out.println(customerCount[index] + " customers bought " + foodCount[index] + " " + food[index]);
-			}
-		}
 	}
-}
 }
